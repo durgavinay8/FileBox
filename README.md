@@ -2,6 +2,8 @@
  
 ## AWS, HTML, CSS, Express, Node Javascript
 
+### Find the outputs of the project below
+
 A cloud-based files management web application utilizing Amazon Web Services (AWS). The application allows users to securely log in, upload, and perform Create, Read, Download, and Delete operations on files anywhere with an internet connection.
 
 •	Server Setup:
