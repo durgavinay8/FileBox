@@ -1,6 +1,6 @@
 # **Files Management Web App**
  
-## AWS, HTML, CSS, Express, Node Javascript
+## AWS, HTML, CSS, Javascript, Express, Node 
 
 ### Find the output images below and [video demo here](https://drive.google.com/file/d/16aEoZyJ4sBGS31zNJ6gwE7wmLFjWXX0r/view?usp=sharing)
 
