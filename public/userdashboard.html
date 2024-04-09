@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style-userdashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img class="logo" src="./images/logo.png" alt="logo">
+        </div>
+        <div class="header-right">
+            <a href="#" class="about">About</a>
+            <p id="user-email"></p>
+            <button id="signout-btn" onclick="signOut()">signout</button>
+        </div>
+    </header>
+    <main>
+        <section class="info-panel">
+            <div class="container">
+                <div class="circular-progress">
+                    <span class="progress-value">0%</span>
+                </div>
+            </div>
+            <div class="storage-info-values">
+                <div class="total-storage">
+                    Total Storage :
+                    <div id="total-storage-value">0</div>
+                    GB
+                </div>
+                <div class="used-storage">
+                    <div class="dot"></div>
+                    Storage Used :
+                    <div id="used-storage-value">0</div>
+                    GB
+                </div>
+                <div class="left-storage">
+                    <div class="dot"></div>
+                    Storage Left :
+                    <div id="left-storage-value">0</div>
+                    GB
+                </div>
+            </div>
+            <ul class="typewise-info">
+                <li class="images-row">
+                    <span>
+                        <i class="fa-solid fa-image"></i>&nbsp;&nbsp; Image
+                    </span>
+                    <span class="images-count">0</span>
+                </li>
+                <hr>
+                <li class="videos-row"><span><i class="fa-solid fa-video"></i>&nbsp;&nbsp;Videos</span><span class="videos-count">0</span></li>
+                <hr>
+                <li class="documents-row"><span><i class="fa-solid fa-file"></i>&nbsp;&nbsp; Documents</span><span class="documents-count">0</span></li>
+                <hr>
+                <li class="others-row">Others <span class="others-count">0</span></li>
+            </ul>
+        </section>
+        <section class="files-section">
+            <!--
+            <div class="search-bar">
+                <div class="search-icon-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="text" placeholder="Search" id="search-field">
+                <button  class="search-button" onclick="Search()">Search</button>
+            </div>
+            -->
+            <hr>
+            <div class="file-path-container">
+                <button class="back-btn" onclick="updatePathOUT()"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+                <p id="file-path"></p>
+            </div>
+            <hr>
+            <div class="buttons-container">
+                <button id="create-folder" class="btn-in-btn-container"><i class="fa-solid fa-folder-plus"></i>&nbsp;&nbsp;Create Folder</button>
+                <div class="upload-container">
+                    <p>drag & drop below, or </p>
+                    <input type="file" name ="files" id="file-input" multiple>
+                    <label for="file-input" id="choose-file" class="btn-in-btn-container"><i class="fa-solid fa-cloud-arrow-up"></i>&nbsp;&nbsp;Choose file</label>
+                </div>
+            </div>
+            <div id="files-table-wrapper">
+                <table id="files-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>File size</th>
+                            <th>Last modified</th>
+                            <th>Download</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="filesTableBody"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="userdashboard-script.js"></script>
+</body>
+</html>

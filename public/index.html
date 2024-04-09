@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FileBox</title>
+  <link rel="stylesheet" href="style-index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Rammetto+One&display=swap" rel="stylesheet"></head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img class="logo" src="images/logo.png" alt="logo">
+      </div>
+      <div class="header-right">
+        <a href="#" class="about">About</a>
+        <a href="https://filebox-user-authentication.auth.eu-north-1.amazoncognito.com/login?client_id=33ccnoieuu10tqp6257hem0blh&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fuserdashboard" class="login-button">Login</a>
+      </div>
+    </header>
+  <main>
+    <section class="left-section">
+      <div class="main-text">
+        <h1>UPLOAD</h1>
+        <h1>STORE</h1>
+        <h1>MANAGE</h1>
+      </div>
+      <p class="sub-text">All your files<br><span>seamlessly</span> in cloud!</p>
+      <div class="arrow-container">
+        <img class="curved-arrow" src="images/curved-arrow.png" alt="curved-arrow">
+      </div>
+      <button onclick="window.location.href='https://filebox-user-authentication.auth.eu-north-1.amazoncognito.com/signup?client_id=33ccnoieuu10tqp6257hem0blh&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fuserdashboard';" class="signup-button">SIGN UP<span></span><span></span><span></span><span></span></button>
+    </section>
+    <section class="right-section">
+      <img class="illustration" src="images/Cloud sync-cuate.png" alt="illustration">
+    </section>
+  </main>
+</body>
+</html>
