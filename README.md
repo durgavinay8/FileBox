@@ -16,3 +16,5 @@ Build an interactive frontend using HTML, CSS, JAVASCRIPT
 
 •	Backend Development:
 Build a backend code on Node.js and Express.js using the AWS-SDK to programmatically interact with the AWS services
+
+![image](https://github.com/durgavinay8/FileBox/assets/113960662/3d13ecd0-2404-4d91-ab64-7b47df1c325d =250x)
